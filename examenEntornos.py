@@ -31,7 +31,11 @@ def listar_tareas(tareas):
     print(f"{marca} {tareas["titulo"]}")
     return
 
-
+#Funcion extra
+def contar_pendientes(tareas):
+    for i in tareas:
+        print(len(tareas["hecha" == False]))
+    return
 
 listar_tareas(tareas)
 
