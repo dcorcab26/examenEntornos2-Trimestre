@@ -20,3 +20,23 @@ def marcar_hecha(tareas, titulo):
     return tareas
 
 
+def listar_tareas(tareas):
+    marca = ""
+
+    for i in tareas:
+        if ["hecha"] == True:
+            marca = "[x]"
+        else:
+            marca = "[ ]"
+    print(f"{marca} {tareas["titulo"]}")
+    return
+
+
+
+listar_tareas(tareas)
+
+agregar_tareas(tareas, "Sacar la basura")
+
+marcar_hecha(tareas, "Estudiar python")
+
+listar_tareas(tareas)
